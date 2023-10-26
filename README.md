@@ -16,6 +16,7 @@ This repository contains the code and research findings related to a systematic 
   - [Constraints](#constraints)
 - [Data Collection](#data-collection)
 - [Scaling Data](#scaling-data)
+- [Optimization Results](#optimization-results)
 - [Contact](#contact)
 
 ## Research Overview
@@ -85,6 +86,20 @@ The data used in this research consists of 10 series of index and return data sp
 ## Scaling Data
 
 Since data series have varying granularities, the monthly series are scaled up to create a dataset with matching quarterly granularity. Return and standard deviation are annualized to better assess performance on a yearly scale.
+
+## Optimization Results
+
+The three-step portfolio simulation yields significant and nuanced insights into the general efficient performance dynamics and influence of venture and buyout on the portfolio. The efficient frontiers, derived from the 10 million portfolio simulations per step, are presented, highlighting the minimum-variance (red star), max-Sharpe as tangent (green star), and retail (purple star) portfolio. All other portfolios are further colored according to their Sharpe ratios. The evolution of the portfolio composition across varying levels of risk along the efficient frontier is pictured next to them. The first two detailed simulation results can be found in the Appendix and will be incorporated and discussed in the line-over-line performance comparison. They are used to measure the impact that each optimization step has and isolate the impact of the inclusion of buyout and VC. The highlight of the portfolio simulations is the final step, where the alternative assets are incorporated, enlarging the asset opportunity set:
+
+
+<div style="overflow-x: auto;">
+  <table style="width: 80%;">
+    <tr>
+      <td style="width: 50%;"><img src="Results/Efficient%20Frontier_v3.png" alt="Efficient Frontier"></td>
+      <td style="width: 50%;"><img src="Results/Efficient%20Frontier%20Composition_v3.png" alt="Efficient Frontier Composition" width="1600"></td>
+    </tr>
+  </table>
+</div>
 
 ## Contact
 
